@@ -34,7 +34,7 @@ app.get('/weather/location/:country/:city', async (req, res) => {
     //console.log(locationKey);
     res.json(locationKey);
   } catch (err) {
-    console.log(err);
+    throw `Error with get Location Key! ${err}`;
   }
 });
 //get current weather condition
@@ -45,7 +45,7 @@ app.get('/weather/current/:locationKey', async (req, res) => {
     //console.log(data);
     res.json(data);
   } catch (err) {
-    console.log(err);
+    throw `Error with get Current Weather! ${err}`;
   }
 });
 //ACCUWEATHER API END
@@ -57,7 +57,7 @@ app.get('/wallpaper/:query', async (req, res) => {
     const {data} = await axios.get(`https://api.unsplash.com/photos/random?client_id=${process.env.UNSPLASH_ACCESS_KEY}&query=${req.params.query}&orientation=landscape`);
     res.json(data);
   }catch(err){
-    console.log(err);
+    throw `Error with Unsplash API! ${err}`;
   }
 });
 //UNSPLASH API END
