@@ -1,4 +1,4 @@
-const main = document.getElementById('main');
+const main = document.getElementById('weather');
 
 const cityName = 'Vienna';
 const countryCode = 'AT';
@@ -31,7 +31,7 @@ const getCurrentCondition = async (locationKey) => {
     const precip = currentWeather.HasPrecipitation;
     createDashboard(description, iconId, isDayTime, temp, precip);
     //prettier-ignore
-    setInterval(updateDashboard,60000,description,iconId,isDayTime,temp,precip);
+    setInterval(createDashboard,60000,description,iconId,isDayTime,temp,precip);
   } catch (err) {
     console.log(err);
   }

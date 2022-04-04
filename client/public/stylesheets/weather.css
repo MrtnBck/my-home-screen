@@ -1,20 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  color: #0d0424;
-  font-weight: bold;
+#weather {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  justify-content: flex-end;
 }
 
 .weather-card {
@@ -25,6 +11,9 @@ body {
   max-width: 100%;
   border-radius: 10px;
   padding: 0.5rem;
+  margin: 2rem;
+  z-index: 1;
+  position: absolute;
 }
 .icon {
   display: flex;
