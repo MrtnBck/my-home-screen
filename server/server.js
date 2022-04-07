@@ -17,10 +17,12 @@ app.get('/', (req, res) => {
   res.sendFile('index.html');
 });
 
-app.get('/weather', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/public', 'weather.html'));
-  //res.sendFile('weather.html');
+//TEST
+app.get('/search', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/public', 'search.html'));
 });
+
+app.get('/');
 
 //API
 //ACCUWEATHER API
