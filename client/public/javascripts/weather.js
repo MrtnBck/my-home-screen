@@ -1,4 +1,4 @@
-const main = document.getElementById('weather');
+const weatherCard = document.getElementById('weather-card');
 
 const cityName = 'Vienna';
 const countryCode = 'AT';
@@ -45,7 +45,7 @@ const createDashboard = (desc, iconId, isDayTime, temp, precip) => {
   const hour = dt.getHours();
   const min = dt.getMinutes();
   const cardHTML = `
-    <div class="weather-card">
+    
     <div class="icon">
         ${icon}
       </div>
@@ -65,9 +65,9 @@ const createDashboard = (desc, iconId, isDayTime, temp, precip) => {
     month < 10 ? '0' + month : month
   }.</span>
       </div>
-      </div>  
+        
     `;
-  main.innerHTML = cardHTML;
+  weatherCard.innerHTML = cardHTML;
 };
 
 const getWeatherIcon = (id) => {
