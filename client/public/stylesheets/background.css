@@ -22,5 +22,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /*   position: absolute;
+  z-index: -100; */
 }
 /* BACKGROUND STYLE END */
