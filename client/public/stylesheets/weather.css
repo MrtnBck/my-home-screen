@@ -8,11 +8,12 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(153, 153, 153, 0.5);
-  width: 350px;
+  width: 300px;
   max-width: 100%;
   border-radius: 10px;
   padding: 0.5rem;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
   z-index: 1;
   position: absolute;
 }
@@ -31,10 +32,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 2.5rem;
-  font-size: 1.5rem;
+  height: 2rem;
+  font-size: 1.2rem;
   margin: 5px 0;
   border-radius: 10px;
+  letter-spacing: 1px;
 }
 
 .temp-data {

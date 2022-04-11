@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/stylesheets/background.css" />
     <link rel="stylesheet" href="/stylesheets/weather.css" />
     <link rel="stylesheet" href="/stylesheets/layout.css" />
+    <link rel="stylesheet" href="/stylesheets/search.css" />
     <!-- prettier-ignore -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -17,15 +18,23 @@
     <main class="grid">
       <section class="setup-grid"></section>
       <section class="middle-grid">
-        <div id="search"></div>
-        <div id="focus"></div>
+        <div class="search-container">
+          <div class="search">
+            <!-- prettier-ignore -->
+            <input id="search-bar" type="text" placeholder="What are you searching for?"/>
+            <button class="btn" id="btn-search">
+              <i id="magnifier" class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
       </section>
-      <section class="weather-grid">
+      <section class="weather-container">
         <!-- <div id="weather"></div> -->
         <div id="weather-card"></div>
       </section>
     </main>
     <script src="/javascripts/background.js"></script>
     <script src="/javascripts/weather.js"></script>
+    <script src="/javascripts/search.js"></script>
   </body>
 </html>

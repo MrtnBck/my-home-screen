@@ -29,8 +29,13 @@ body {
   font-family: inherit;
   font-weight: inherit;
   color: inherit;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   border-radius: 10px 0 0 10px;
+}
+
+#search-bar::placeholder {
+  color: #0d0424;
+  opacity: 1;
 }
 
 .search {

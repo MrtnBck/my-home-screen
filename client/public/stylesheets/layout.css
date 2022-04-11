@@ -17,18 +17,26 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-columns: 2fr 3fr 2fr;
   grid-template-rows: 1fr;
   height: 100vh;
+  width: 100vw;
 }
 
 .middle-grid {
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-.weather-grid {
+.weather-container {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 2rem;
 }
