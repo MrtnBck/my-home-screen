@@ -1,23 +1,23 @@
 const submit = document.getElementById('btn-search');
-const input = document.getElementById('search-bar');
+const inputSearch = document.getElementById('search-bar');
 const error = document.getElementById('error-container');
 
 submit.addEventListener('click', (e) => {
-  const inputValue = document.getElementById('search-bar').value;
-  if (inputValue === '') {
+  const inputSearchValue = document.getElementById('search-bar').value;
+  if (inputSearchValue === '') {
     e.preventDefault();
     console.log('search bar is blank');
   } else {
-    window.location = 'https://www.google.com/search?q=' + inputValue;
+    window.location = 'https://www.google.com/search?q=' + inputSearchValue;
   }
 });
 
-input.addEventListener('keyup', (e) => {
-  const inputValue = document.getElementById('search-bar').value;
-  if (e.key === 'Enter' && inputValue !== '') {
-    window.location = 'https://www.google.com/search?q=' + inputValue;
+inputSearch.addEventListener('keyup', (e) => {
+  const inputSearchValue = document.getElementById('search-bar').value;
+  if (e.key === 'Enter' && inputSearchValue !== '') {
+    window.location = 'https://www.google.com/search?q=' + inputSearchValue;
   }
-  if (inputValue === '') {
+  if (e.key === 'Enter' && inputSearchValue === '') {
     console.log('search bar is blank');
   }
 });

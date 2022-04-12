@@ -1,0 +1,39 @@
+.focus-input {
+  padding-bottom: 5px;
+  position: relative;
+  width: 600px;
+}
+
+.focus-input #focus-bar {
+  background-color: rgba(189, 193, 196, 0.5);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  border-radius: 10px 10px 0 0;
+
+  text-align: center;
+  position: relative;
+}
+
+.focus-container #focus-bar::placeholder {
+  color: #0d0424;
+  opacity: 1;
+}
+
+/* .focus-input::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0d0424;
+  height: 5px;
+  border-radius: 10px;
+} */

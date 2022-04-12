@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/stylesheets/weather.css" />
     <link rel="stylesheet" href="/stylesheets/layout.css" />
     <link rel="stylesheet" href="/stylesheets/search.css" />
+    <link rel="stylesheet" href="/stylesheets/focus.css" />
     <!-- prettier-ignore -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -27,6 +28,14 @@
             </button>
           </div>
         </div>
+        <div class="focus-container">
+          <div class="focus-input">
+            <input id="focus-bar" type="text" placeholder="What is your main focus for today?" />
+
+          </div>
+            <!-- prettier-ignore -->
+          </div>
+        </div>
       </section>
       <section class="weather-container">
         <!-- <div id="weather"></div> -->
@@ -36,5 +45,6 @@
     <script src="/javascripts/background.js"></script>
     <script src="/javascripts/weather.js"></script>
     <script src="/javascripts/search.js"></script>
+    <script src="/javascripts/focus.js"></script>
   </body>
 </html>

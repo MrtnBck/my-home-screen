@@ -40,3 +40,10 @@ body {
   align-items: flex-end;
   margin-bottom: 2rem;
 }
+
+.focus-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 7rem;
+}
