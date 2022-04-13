@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/stylesheets/layout.css" />
     <link rel="stylesheet" href="/stylesheets/search.css" />
     <link rel="stylesheet" href="/stylesheets/focus.css" />
+    <link rel="stylesheet" href="/stylesheets/notes.css" />
     <!-- prettier-ignore -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -22,7 +23,7 @@
         <div class="search-container">
           <div class="search">
             <!-- prettier-ignore -->
-            <input id="search-bar" type="text" placeholder="What are you searching for?"/>
+            <input id="search-bar" type="text" placeholder="What are you searching for?" autocomplete="off"/>
             <button class="btn" id="btn-search">
               <i id="magnifier" class="fa-solid fa-magnifying-glass"></i>
             </button>
@@ -30,16 +31,32 @@
         </div>
         <div class="focus-container">
           <div class="focus-input">
-            <input id="focus-bar" type="text" placeholder="What is your main focus for today?" />
+            <input id="focus-bar" type="text" placeholder="What is your main focus for today?" spellcheck="false"/>
 
           </div>
             <!-- prettier-ignore -->
           </div>
         </div>
       </section>
-      <section class="weather-container">
+      <section class="right-grid">
         <!-- <div id="weather"></div> -->
         <div id="weather-card"></div>
+        <div class="notes-container">
+          <div class="notes-outer">
+            <button class="btn btn-change">X</button>
+            <button class="btn btn-change">X</button>
+            <button class="btn btn-change">X</button>
+            <button class="btn btn-change">X</button>
+            <button class="btn btn-change">X</button>
+          </div>
+          <div class="notes-main-container">
+            <div class="control-note-btn">
+              <button class="btn" id="add"><i class="fas fa-plus"></i></button>
+              <button class="btn" id="remove"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <textarea id="note-area"></textarea>
+          </div>
+        </div>
       </section>
     </main>
     <script src="/javascripts/background.js"></script>

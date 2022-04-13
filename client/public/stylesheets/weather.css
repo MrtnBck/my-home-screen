@@ -1,10 +1,11 @@
-#weather {
+/* #weather {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
+} */
 
 #weather-card {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   background-color: rgba(153, 153, 153, 0.5);
@@ -14,8 +15,8 @@
   padding: 0.5rem;
   margin-top: 2rem;
   margin-right: 2rem;
-  z-index: 1;
-  position: absolute;
+  /*   z-index: 1;
+  position: absolute; */
 }
 .icon {
   display: flex;

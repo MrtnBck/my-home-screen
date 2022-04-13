@@ -32,7 +32,6 @@ const getWithExpiry = (key) => {
   const now = new Date();
   //getTime() return with UTC+offset, adding +2hours in millisec to the time stamp to become UTC+00
   if (now.getTime() + 7200000 > focus.expiry) {
-    console.log('removed');
     localStorage.removeItem('focus');
     return null;
   }

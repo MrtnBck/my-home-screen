@@ -1,0 +1,58 @@
+.notes-container {
+  display: flex;
+  align-items: flex-end;
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.control-note-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.notes-container .btn {
+  background-color: rgb(150, 149, 149);
+  padding: 0.5em;
+  width: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.notes-container .btn#add {
+  margin-right: 0.5rem;
+}
+
+.notes-container .btn.btn-change {
+  display: block;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.notes-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#note-area {
+  background-color: rgba(189, 193, 196, 0.7);
+  outline: none;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  resize: none;
+}

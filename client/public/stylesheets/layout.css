@@ -28,10 +28,11 @@ body {
   grid-template-rows: 1fr 1fr;
 }
 
-.weather-container {
+.right-grid {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .search-container {
