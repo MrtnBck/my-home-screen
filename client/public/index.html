@@ -18,7 +18,9 @@
   <body>
     <div class="bg"></div>
     <main class="grid">
-      <section class="setup-grid"></section>
+      <section class="setup-grid">
+        <button id="notes-open" class="btn open-notes-btn"><i class="fa-solid fa-note-sticky"></i></button>
+      </section>
       <section class="middle-grid">
         <div class="search-container">
           <div class="search">
@@ -41,27 +43,14 @@
       <section class="right-grid">
         <!-- <div id="weather"></div> -->
         <div id="weather-card"></div>
-        <div class="notes-container">
-          <div class="notes-outer">
-            <button class="btn btn-change">X</button>
-            <button class="btn btn-change">X</button>
-            <button class="btn btn-change">X</button>
-            <button class="btn btn-change">X</button>
-            <button class="btn btn-change">X</button>
-          </div>
-          <div class="notes-main-container">
-            <div class="control-note-btn">
-              <button class="btn" id="add"><i class="fas fa-plus"></i></button>
-              <button class="btn" id="remove"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <textarea id="note-area"></textarea>
-          </div>
-        </div>
+        
+        <div id="note"></div>
       </section>
     </main>
     <script src="/javascripts/background.js"></script>
     <script src="/javascripts/weather.js"></script>
     <script src="/javascripts/search.js"></script>
     <script src="/javascripts/focus.js"></script>
+    <script src="/javascripts/notes.js"></script>
   </body>
 </html>
