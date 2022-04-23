@@ -1,10 +1,38 @@
+/* #note {
+  display: flex;
+
+  /* width: 100%; */
+
 .notes-container {
   display: flex;
   align-items: flex-end;
   width: 90%;
   max-width: 400px;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   margin-right: 2rem;
+  animation: slideOn 1s;
+}
+
+.slide-off {
+  animation: slideOff 1s;
+}
+
+@keyframes slideOn {
+  from {
+    transform: translateX(180%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOff {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(180%);
+  }
 }
 
 .control-note-btns {
@@ -15,6 +43,7 @@
 
 .notes-container .btn {
   background-color: rgb(150, 149, 149);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   padding: 0.5em;
   width: 50px;
   border-radius: 10px;
@@ -27,7 +56,8 @@
 }
 
 .notes-container .btn#add,
-.notes-container .btn#remove {
+.notes-container .btn#remove,
+.notes-container .btn#save {
   margin-right: 0.5rem;
 }
 
@@ -50,6 +80,7 @@
 
 #note-area {
   background-color: rgba(189, 193, 196, 0.7);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   outline: none;
   font-family: inherit;
   font-weight: inherit;
@@ -62,9 +93,9 @@
   resize: none;
 }
 
-/* !! */
 .btn.open-notes-btn {
   background-color: rgb(150, 149, 149);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   padding: 0.5em;
   width: 50px;
   border-radius: 10px;
@@ -75,7 +106,12 @@
   font-weight: inherit;
   font-size: inherit;
   margin-right: 2rem;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
+  transition: transform 0.5s;
+}
+
+.slide-off-btn {
+  transform: translateY(200%);
 }
 
 .notes-outer {
